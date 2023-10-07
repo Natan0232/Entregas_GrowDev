@@ -1,0 +1,28 @@
+<!-- 9. As maçãs desta estação custam R$0,30 se forem compradas
+menos do que uma dúzia, e R$0,25 se forem compradas pelo menos
+doze. Desenvolva um algoritmo que leia o número de maçãs
+compradas, calcule e escreva o valor total da compra. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let compra = Number(prompt('Quantas maças gostaria de comprar?'));
+        let resultado = 0;
+
+        if (compra => 12) {
+            resultado = compra * 0.30;
+        } else {
+            resultado = compra * 0.25;
+        }
+
+        console.log(`O total da compra fica em R$${resultado.toFixed(2)}`);
+        document.write(`O total da compra fica em R$${resultado.toFixed(2)}`);
+    </script>
+</body>
+</html>

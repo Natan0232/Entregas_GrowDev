@@ -1,0 +1,24 @@
+<!-- 11. Crie um algoritmo que armazene um número inteiro positivo, e gere
+um alerta com as seguintes mensagens:
+a. “Número é par!”, se o valor armazenado for par;
+b. “Número é impar!”, se o valor armazenado for ímpar; -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inteiro = Number(prompt("Digite um numero positivo e inteiro:"));
+        if (inteiro % 2 === 0) {
+            alert('O numero é par!');
+            document.write('O numero é par!');
+        } else {
+            alert('O numero é impar!');
+            document.write('O numero é impar!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- 5. Crie cinco variáveis. Na primeira armazene o nome de um aluno. Na
+segunda, terceira e quarta coloque 3 notas (valores de 0 à 10).
+Calcule a média das notas e armazene na quinta variável criada.
+Apresente no documento html a seguinte informação:
+"O aluno _____ ficou com média _,_" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let aluno = prompt("Digite o Nome do Aluno:");
+        let nota1 = Number(prompt("Qual a primeira Nota? (valor de 0 a 10)"));
+        let nota2 = Number(prompt("Qual a segunda Nota? (valor de 0 a 10)"));
+        let nota3 = Number(prompt("Qual a terceira Nota? (valor de 0 a 10)"));
+        let media = (nota1 + nota2 + nota3) / 3 ; 
+        document.write(`O aluno ${aluno} ficou com média ${media.toFixed(2)}`)
+    </script>
+</body>
+</html>

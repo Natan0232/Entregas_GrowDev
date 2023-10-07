@@ -1,0 +1,31 @@
+<!-- 8. Desenvolva um algoritmo para ler dois valores e imprimir uma das
+três mensagens a seguir:
+a. ‘Números iguais’, caso os números sejam iguais;
+b. ‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+c. ‘Segundo maior’, caso o segundo seja maior que o primeiro. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let valor1 = Number(prompt('Digite o primeiro valor:'));
+        let valor2 = Number(prompt('Digite o segundo valor:'));
+
+        if (valor1 === valor2) {
+            console.log('Hey, é igual!');
+            document.write('Hey, é igual!');
+        } else if ( valor1 > valor2) {
+            console.log('Hey, o primeiro é maior!');
+            document.write('Hey, o primeiro é maior!');
+        } else if( valor2 > valor1){
+            console.log('Hey, o segundo é maior!')
+            document.write('Hey, o segundo é maior!');
+        }
+    </script>
+</body>
+</html>
